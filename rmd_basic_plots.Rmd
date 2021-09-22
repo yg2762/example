@@ -2,7 +2,7 @@
 title: "Basic Plots"
 author: "Jeff Goldsmith"
 date: 2019-09-10
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include = FALSE}
@@ -16,7 +16,7 @@ First we create a dataframe containing variables for our plots.
 ```{r df_create}
 set.seed(1234)
 
-plot_df = tibble(
+plot_df = tibble (
   x = rnorm(1000, sd = .5),
   y = 1 + 2 * x + rnorm(1000)
 )
